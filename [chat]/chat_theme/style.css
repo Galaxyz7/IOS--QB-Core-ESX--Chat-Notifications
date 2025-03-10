@@ -1,0 +1,150 @@
+* {
+    font-family: inherit;
+}
+
+.chat-window {
+    background-color: rgba(30, 30, 30, 0) !important;
+    border: calc(0.24vh / 2) solid rgba(158, 158, 158, 0);
+    outline: calc(0.24vh / 2) solid rgba(178, 178, 178, 0);
+    border-radius: 5px;
+    width: 30vw !important;
+    height:11vw;
+}
+
+@font-face {
+    font-family: 'Font2';
+    src: url(https://runtime.fivem.net/temp/ChaletLondonNineteenSixty.otf?a);
+}
+
+@font-face {
+    font-family: 'Font2_cond';
+    src: url(https://runtime.fivem.net/temp/chaletcomprime-colognesixty-webfont.ttf?a);
+}
+
+.msg {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+    color: #ffffff;
+    margin-right: 6px;
+
+    font-size: calc(1.7vh); /* 13px in 720p, calc'd by width */
+    filter: url(#svgDropShadowFilter);
+
+    line-height: calc(2.7vh * 1.2);
+
+    margin-bottom: 0;
+    border-radius: 20px;
+    background-color: rgba(203, 203, 203, 0.601) !important;
+    border: calc(0.24vh / 2) solid rgba(158, 158, 158, 0.575);
+    outline: calc(0.24vh / 2) solid rgba(178, 178, 178, 0.71);
+}
+
+.chat-messages {
+    overflow-x: hidden; /* Enable vertical scrolling */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    display: flex;
+    flex-direction: column; /* Ensure messages stack vertically */
+    gap: 10px; /* Adjust this value as needed */
+}
+
+
+.chat-messages::-webkit-scrollbar {
+    width: 1em;
+  }
+  
+.chat-messages::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  
+.chat-messages::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #b2b2b2;
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transition for color and thumb movement */
+  }
+
+.msg > span > span > span {
+    margin-left: 14px;
+    display: inline-block;
+    max-width: 26vw;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.msg > span {
+    margin-left: 10px;
+}
+
+.msg > span > span > b {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-weight: normal;
+    margin-left: 6px;
+    vertical-align: baseline;
+    padding-right: 11px;
+    line-height: calc(1.5vh * 1.2);
+    font-size: calc(2vh);
+}
+
+.msg > span > span > span {
+    vertical-align: baseline;
+}
+
+.msg i:first-of-type {
+    font-style: normal;
+    color: #c0c0c0;
+}
+
+.chat-input {
+    background: inherit !important;
+    height: auto;
+    top: 25% !important;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.chat-input > div {
+    background-color: rgba(203, 203, 203, 0.601) !important;
+    border: calc(0.24vh / 2) solid rgba(158, 158, 158, 0.575);
+    outline: calc(0.24vh / 2) solid rgba(178, 178, 178, 0.71); /* to replace margin-background */
+    padding: calc(0.2vh / 2);
+    border-radius: 20px;
+    width: 26vw !important;
+    margin-left: 5%;
+    filter: url(#svgDropShadowFilter);
+}
+
+.chat-input .prefix {
+    margin: 0;
+    margin-left: 0.7%;
+    margin-right: 0.7%;
+    margin-top: -0.1%;
+    line-height: 2.8vh;
+}
+
+.chat-input .prefix.any {
+    opacity: 0.8;
+}
+
+.chat-input .prefix.any:before {
+    content: '[';
+    color: #f8f8f8;
+}
+
+.chat-input .prefix.any:after {
+    content: ']';
+    color: #ffffff;
+    margin-right: 1%;
+}
+
+.suggestions {
+    background: transparent;
+}
+
+textarea {
+    background: transparent;
+    padding: 0.5vh;
+    font-family: inherit;
+}
+
+pre {
+    /*margin-left: 66px;*/
+    padding-bottom: 27px;
+    font-size: larger;
+    color: red;
+}
