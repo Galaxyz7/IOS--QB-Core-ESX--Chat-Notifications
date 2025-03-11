@@ -64,7 +64,7 @@
   outline: rgba(178, 178, 178, 0.71) solid calc(0.12vh);
   text-indent: 0;
   width: fit-content !important; /* Changed to fit-content */
-  max-width: 95%; /* Add max-width to ensure wrapping */
+  max-width: 90%; /* Add max-width to ensure wrapping */
   height: auto !important;
   padding: 8px;
   align-self: flex-start; /* Keep message container aligned to start */
@@ -97,13 +97,9 @@
 }
 
 .msg > span > span > div {
-  align-self: center;
-  text-align: center;
-  width: 100%;
-
+  display: inline;
+  overflow: hidden;
 }
-
-
 
 .msg i:first-of-type {
   font-style: normal;

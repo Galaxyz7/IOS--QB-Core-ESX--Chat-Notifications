@@ -12,7 +12,7 @@ chat_theme 'esx' {
     styleSheet = 'style.css',
     script = 'shadow.js',
     msgTemplates = {
-        default = '<b>{0}</b><span>{1}</span>'
+        default = '<b>{0}</b><div>{1}</div>'
     }
 }
 
